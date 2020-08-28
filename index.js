@@ -8,13 +8,18 @@ function logDriverNames(driver){
 
 function logDriversByHometown(driver,location){
   const callback=function(dri,i,arr){
+<<<<<<< HEAD
     if (dri.hometown===location){
+=======
+    if (driver.hometown===location){
+>>>>>>> 3e64ced49017ca2b92627a3c01852ce2f23386ef
           console.log(dri.name)
     }
   }
   driver.forEach(callback)
 }
 
+<<<<<<< HEAD
 function driversByRevenue(driver){
 
   const callback=function(dri1,dri2){return dri1.revenue-dri2.revenue}
@@ -33,6 +38,10 @@ function totalRevenue(driver){
   }
   return driver.reduce(callback,[])
 }
+=======
+
+
+>>>>>>> 3e64ced49017ca2b92627a3c01852ce2f23386ef
 
 
 
