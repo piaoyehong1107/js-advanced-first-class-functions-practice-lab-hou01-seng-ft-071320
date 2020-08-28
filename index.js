@@ -36,7 +36,7 @@ function totalRevenue(driver){
   const callback=function(agg,ele,i,arr){
     return agg + parseInt(ele.revenue)
   }
-  return driver.reduce(callback,[])
+  return driver.reduce(callback,0)
 }
 =======
 
